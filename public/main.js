@@ -18,9 +18,9 @@ const getweather = async () => {
   }
 
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?${state.locationSelector}=${
-      state.location
-    }&appid=${state.appID}&units=imperial`
+    `https://api.openweathermap.org/data/2.5/weather?${
+      state.locationSelector
+    }=${state.location}&appid=${state.appID}&units=imperial`
   )
 
   if (response.status === 200) {
